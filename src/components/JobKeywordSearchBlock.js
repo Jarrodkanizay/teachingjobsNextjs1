@@ -14,7 +14,7 @@ const UniSearchBlock = ({
   onInputChange,
   forceClass,
 }) => {
-  const { region, setQ } = useStore();
+
   const countryRef = useRef("");
   const [query, setQuery] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -94,7 +94,7 @@ const UniSearchBlock = ({
                 onClick={() => {
                   console.log("category21",category2)
                   setQuery(category2);
-                  setQ(category2)
+    
                   onSelect(realCtg, category2, link)
                 }                }
               >
